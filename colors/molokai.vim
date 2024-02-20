@@ -140,7 +140,7 @@ if &t_Co > 255
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    else
-      hi Normal       ctermfg=252 ctermbg=233
+      hi Normal       ctermfg=15 ctermbg=233
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    endif
@@ -163,11 +163,11 @@ if &t_Co > 255
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
-   hi Exception       ctermfg=118               cterm=bold
+   hi Exception       ctermfg=141               cterm=bold
    hi Float           ctermfg=135
    hi FoldColumn      ctermfg=67  ctermbg=16
    hi Folded          ctermfg=67  ctermbg=16
-   hi Function        ctermfg=118
+   hi Function        ctermfg=81
    hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
    hi IncSearch       ctermfg=193 ctermbg=16
@@ -208,14 +208,14 @@ if &t_Co > 255
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253
    hi StatusLineNC    ctermfg=244 ctermbg=232
-   hi StorageClass    ctermfg=208
-   hi Structure       ctermfg=81
+   hi StorageClass    ctermfg=161
+   hi Structure       ctermfg=118
    hi Tag             ctermfg=161
    hi Title           ctermfg=166
    hi Todo            ctermfg=231 ctermbg=232   cterm=bold
 
-   hi Typedef         ctermfg=81
-   hi Type            ctermfg=81                cterm=none
+   hi Typedef         ctermfg=118
+   hi Type            ctermfg=118                cterm=none
    hi Underlined      ctermfg=244               cterm=underline
 
    hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
@@ -233,9 +233,9 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=59
 
    if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal       ctermfg=252 ctermbg=234
+       hi Normal       ctermfg=15  ctermbg=234
        hi CursorLine               ctermbg=236   cterm=none
-       hi CursorLineNr ctermfg=208               cterm=none
+       hi CursorLineNr ctermfg=15              cterm=none
 
        hi Boolean         ctermfg=141
        hi Character       ctermfg=222
